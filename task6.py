@@ -34,5 +34,5 @@ try:
         else:
             print('no')
 
-except Exception:
+except Exception: # pylint: disable=broad-except
     print('error')
