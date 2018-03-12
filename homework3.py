@@ -21,10 +21,12 @@ class Printoto:
             f = open("log.txt", "w")
             for i in l:
                 f.write("%s\n" % i)
+            f.close()
         else:
             f = open("log.json", "w")
             wj = json.dumps(l)
             f.write(wj)
+            f.close()
 
 
 t_st = ['time']
